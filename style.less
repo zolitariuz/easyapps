@@ -315,6 +315,25 @@ form{
 	}
 }
 
+.tabla{ margin: 0 0 @margen 0; border-bottom: 1px solid @highlight; border-right: 1px solid @highlight;
+	.fila{ border-top: 1px solid @highlight; border-left: 1px solid @highlight;
+		&.header{ background: @highlight; color: @claro; }
+		h4{ .font(1.6em, 1, 600); }
+		p{ margin: 0; .font(1em, 1);
+			span{ .font(0.8em, 1); }
+		}
+	}
+	.span{ padding: @margen; border-right: 1px solid @highlight;
+		&:last-child{ border-right: none; }
+		p{
+			&:last-child{ margin-bottom: 0; }
+		}
+		i{ color: @highlight; font-size: 1.3em;
+			&.fa-times-circle{ color: @warning; }
+		}
+	}
+}
+
 /*** HEADER ***/
 
 header{ padding: @margen 0; border-bottom: 1px solid @highlight;

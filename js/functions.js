@@ -26,11 +26,14 @@
 			activar( $(this), $('.pasos-container .boton') );
 		});
 
+		alturaTabla();
+
 		// /*** RESPONSIVE ***/
 
 		$(window).resize(function(event) {
 			copyHeight( $('.hero'), $('.bg-hero') );
 			copyHeight( $('.hero'), $('.screen') );
+			alturaTabla();
 		});
 
 
@@ -77,10 +80,37 @@
 
 	function callMasonry(){
 		var container = $('.masonry');
-		var msnry = new Masonry( container[0], {
-		  itemSelector: '.opcion'
+		container.imagesLoaded( function() {
+			var msnry = new Masonry( container[0], {
+			  itemSelector: '.opcion'
+			});
+		});
+	}
+
+	function alturaTabla(){
+		var maxHeight;
+		var outerMaxHeight;
+		$('.tabla .fila').each(function(){
+			var alturasSpans = $(this).children('.span').map(function() {
+				return $(this).height();
+			}).get();
+			maxHeight = Math.max.apply(null, alturasSpans);
+			$(this).children('.span').find('i').css({
+				lineHeight: maxHeight+'px'
+			});
+
+			var outerAlturasSpans = $(this).children('.span').map(function() {
+				return $(this).outerHeight();
+			}).get();
+			outerMaxHeight = Math.max.apply(null, outerAlturasSpans);
+
+
+			$(this).children('.span').css({
+				minHeight: outerMaxHeight
+			});
+
+			console.log(maxHeight);
 		});
 	}
 
 })(jQuery);
-
