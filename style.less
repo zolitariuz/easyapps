@@ -379,10 +379,9 @@ hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highli
 	h3{border-bottom: solid 1px @highlight; padding-bottom:@margen/2; .font(1.2em, 1.5em, 800); text-align: center;}
 	h4{color: @highlight; .font(1.5em, 1em, 400);}
 	ul{
-		li{margin-bottom: @margen; list-style: none; border: solid 2px @highlight; border-radius: 5px; color: lighten(@obscuro,20%); .transition;
+		li{margin-bottom: @margen; list-style: none; border: solid 1px @obscuro; color: lighten(@obscuro,20%); .transition;
 			a{ display: block; width: 100%; height: 100%; padding:@margen/2; text-decoration: none; color: lighten(@obscuro,20%);}
-
-			&:hover{background: @highlight; color: @claro;
+			&:hover, &.active{ border: solid 1px @highlight; background: @highlight; color: @claro;
 				a{color: @claro;}
 			}
 		}
