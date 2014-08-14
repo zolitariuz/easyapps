@@ -98,12 +98,64 @@
 	<button data-paso-actual="4" data-paso-siguiente="4"  class="solid big block margin-bottom center" type="submit">siguiente</button>
 </div><!--PASO 3 Selecciona la navegación.-->
 
-<div class="columna xmall-8 center paso-4">
-	<h3 class="text-center">Configuración</h3>
-	<form class="nombre-app big" action="/">
-		<button data-paso-actual="4" data-paso-siguiente="5"  class="solid big block center" type="submit">siguiente</button>
-	</form>
-</div>
+<div class="paso-4 margin-bottom">
+	<div class="masonry">
+		<h2 class="text-center columna center block">Selecciona el tipo de navegación.</h2>
+		<div class="clear"></div>
+		<div class="columna xmall-2 secciones">
+			<h3>Secciones</h3>
+			<ul class="center block">
+				<li><a data-seccion="web" href="#"><i class="fa fa-globe"></i> Web</a></li>
+				<li><a data-seccion="vista-general" href="#"><i class="fa fa-th-large"></i> Vista general</a></li>
+				<!--<li><a data-seccion="" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+				<li><a data-seccion="" href="#"><i class="fa fa-twitter"></i> Twitter</a></li>-->
+				<li><a data-seccion="rss" href="#"><i class="fa fa-rss"></i> RSS</a></li>
+				<li><a data-seccion="galeria-de-fotos" href="#"><i class="fa fa-camera"></i> Galería de fotos</a></li>
+				<li><a data-seccion="galeria-de-videos" href="#"><i class="fa fa-video-camera"></i> Galería de videos</a></li>
+				<li><a data-seccion="galeria-de-audios" href="#"><i class="fa fa-headphones"></i> Galería de audios</a></li>
+				<li><a data-seccion="eventos" href="#"><i class="fa fa-clock-o"></i> Eventos</a></li>
+				<li><a data-seccion="mapa" href="#"><i class="fa fa-map-marker"></i> Mapa</a></li>
+				<li><a data-seccion="contactanos" href="#"><i class="fa fa-paper-plane"></i> Contáctanos</a></li>
+				<li><a data-seccion="lista" href="#"><i class="fa fa-list"></i> Lista</a></li>
+			</ul>
+		</div><!--Secciones-->
+		<div class="columna xmall-7 config">
+			<h3 class="margin-bottom">Configuración</h3>
+			<div id="config-content" class="full clearfix">
+				<div class="frame-config forma">
+					<div class="columna xmall-10 center">
+						<h4 class="text-center">Haz click en una de las secciones de la izquierda para configurarla en esta área y agregarla a tu app.</h4>
+					</div>
+				</div><!--MAPA-->
+			</div><!--Área de configuración-->
+		</div><!--Configuración-->
+		<div class="columna xmall-3 agregadas">
+			<h3>Secciones agregadas</h3>
+			<div class="fullclearfix forma">
+				<form action="" method="" class="columna xmall-12" >
+					<fieldset>
+						<label class="full" for="tema">Tema</label>
+		        		<select class="columna xmall-12" id="tema" name="tema">
+					    	<option value="blanco">Blanco</option>
+					    	<option value="negro">Negro</option>
+					    	<option value="azul">Azul</option>
+					    	<option value="elegante">Elegante</option>
+					    </select>
+					    <label class="full" for="navegcion">Navegación</label>
+		        		<select class="columna xmall-12" id="navegacion" name="navegacion">
+					    	<option value="tab-bar">Tab bar</option>
+					    	<option value="lista">Lista</option>
+					    	<option value="hamburger">Hamburger menu</option>
+					    </select>
+				    </fieldset>
+				</form>
+			</div>
+			<button data-paso-actual="4" data-paso-siguiente="4"  class="solid big block margin-bottom center" type="submit">preview</button>
+		</div><!--Secciones agregadas-->
+	</div><!-- masonry -->
+	<div class="clear"></div>
+
+</div><!--PASO 4 Configuración.-->
 
 <div class="columna xmall-8 center paso-5">
 	<ul class="instrucciones">
