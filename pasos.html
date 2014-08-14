@@ -112,12 +112,118 @@
 	<button data-paso-actual="3" data-paso-siguiente="4"  class="solid big block center" type="submit">siguiente</button>
 </div>
 
-<div class="columna xmall-8 center paso-4">
-	<h3 class="text-center">Configuración</h3>
-	<form class="nombre-app big" action="/">
-		<button data-paso-actual="4" data-paso-siguiente="5"  class="solid big block center" type="submit">siguiente</button>
-	</form>
-</div>
+<div class="paso-4 margin-bottom">
+	<div class="masonry">
+		<h2 class="text-center columna center block">Selecciona el tipo de navegación.</h2>
+		<div class="clear"></div>
+		<div class="columna xmall-2 secciones">
+			<h3>Secciones</h3>
+			<ul class="center block">
+
+				<li><a href="#"><i class="fa fa-globe"></i> Web</a></li>
+				<li><a href="#"><i class="fa fa-th-large"></i> Vista general</a></li>
+				<!--<li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>-->
+				<li><a href="#"><i class="fa fa-rss"></i> RSS</a></li>
+				<li><a href="#"><i class="fa fa-camera"></i> Galería de fotos</a></li>
+				<li><a href="#"><i class="fa fa-video-camera"></i> Galería de videos</a></li>
+				<li><a href="#"><i class="fa fa-headphones"></i> Galería de audio</a></li>
+				<li><a href="#"><i class="fa fa-clock-o"></i> Eventos</a></li>
+				<li><a href="#"><i class="fa fa-map-marker"></i> Mapa</a></li>
+				<li><a href="#"><i class="fa fa-paper-plane"></i> Contáctanos</a></li>
+				<li><a href="#"><i class="fa fa-list"></i> Lista</a></li>
+			</ul>
+		</div><!--Secciones-->
+		<div class="columna xmall-7 config">
+			<h3 class="margin-bottom">Configuración</h3>
+			<div id="config-content" class="full clearfix">
+				<div class="frame-config forma">
+					<h3 class="columna xmall-6">Contacto</h3>
+					<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+					<form class=" columna xmall-12 nombre-app text-left" action="/">
+						<fieldset>
+							<label for="titulo-seccion">Título de la sección<i>*</i></label>
+							<input id="titulo-seccion"type="text" class="columna no-margin">
+						</fieldset><!--Título de la sección-->
+						
+						<fieldset>	
+							<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+							<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+							<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+							<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+						</fieldset><!--icono-->
+
+						<fieldset>
+							<label for="nombre-contacto">Nombre del establecimiento o persona a contactar<i>*</i></label>
+							<input id="nombre-contacto" type="text" class="columna no-margin">
+							<label for="direccion">Dirección</label>
+							<input id="direccion" type="text" class="columna margin-bottom">
+							<div class="columna xmall-6">
+								<label for="latitud">Latitud</label>
+								<input id="latitud" type="text" class="margin-bottom">
+							</div>
+							<div class="columna xmall-6">
+								<label for="longitud">Longitud</label>
+								<input id="longitud" type="text" class="margin-bottom">
+							</div>
+							<label for="url-contacto">URL</label>
+							<input id="url-contacto" type="url" class="columna margin-bottom">
+							<label for="email-contacto">email</label>
+							<input id="email-contacto" type="email" class="columna margin-bottom">
+							<label for="tel-contacto">Teléfono</label>
+							<input id="tel-contacto" type="tel" class="columna margin-bottom">
+							<label for="url-twitter">URL para twitter</label>
+							<input id="url-twitter" type="url" class="columna margin-bottom">
+							<label for="url-facebook">URL para facebook</label>
+							<input id="url-facebook" type="url" class="columna margin-bottom">
+							<label for="descripcion-contacto">Descripción</label>
+							<textarea id="descripcion-contacto" class="columna margin-bottom">
+							</textarea>
+							<label for="lista-contactos">¿Deseas añadir tu lista de contactos?</label>
+							<input type="checkbox" value="sí" title="Sí">
+
+
+							<button type="submit" class="alternate right">agregar</button>
+						</fieldset><!--Agregar punto-->
+						<fieldset>
+							<div class="full clearfix margin-bottom">
+								<legend class="columna xmall-12">Puntos</legend>
+								<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-left right"></i></div>
+							</div>
+						</fieldset><!--puntos-->
+						
+						<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+					</form>
+				</div><!--MAPA-->
+			</div><!--Área de configuración-->
+		</div><!--Configuración-->
+		<div class="columna xmall-3 agregadas">
+			<h3>Secciones agregadas</h3>
+			<div class="fullclearfix forma">
+				<form action="" method="" class="columna xmall-12" >
+					<fieldset>
+						<label class="full" for="tema">Tema</label>
+		        		<select class="columna xmall-12" id="tema" name="tema">
+					    	<option value="blanco">Blanco</option>
+					    	<option value="negro">Negro</option>
+					    	<option value="azul">Azul</option>
+					    	<option value="elegante">Elegante</option>
+					    </select>
+					    <label class="full" for="navegcion">Navegación</label>
+		        		<select class="columna xmall-12" id="navegacion" name="navegacion">
+					    	<option value="tab-bar">Tab bar</option>
+					    	<option value="lista">Lista</option>
+					    	<option value="hamburger">Hamburger menu</option>
+					    </select>
+				    </fieldset>
+				</form>
+			</div>
+			<button data-paso-actual="4" data-paso-siguiente="4"  class="solid big block margin-bottom center" type="submit">preview</button>
+		</div><!--Secciones agregadas-->
+	</div><!-- masonry -->
+	<div class="clear"></div>
+	
+</div><!--PASO 4 Configuración.-->
 
 <div class="columna xmall-8 center paso-5">
 	<ul class="instrucciones">
