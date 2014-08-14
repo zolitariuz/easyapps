@@ -80,9 +80,10 @@
 
 	function loadConfiguracion(elemento){
 		var dataSeccion = elemento.data('seccion');
-		console.log(dataSeccion);
 		var seccion = '.seccion-'+dataSeccion;
-		console.log(seccion);
+		$('.secciones li').removeClass('active');
+		elemento.parent().addClass('active');
+		//var seccionActiva = $(".seccion[data-seccion='"+seccion+"']");
 		//stepCompleted.addClass('completed');
 		$('.frame-config').empty();
 		$('.frame-config').load('area-de-configuracion.html '+seccion);
