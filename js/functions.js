@@ -26,6 +26,11 @@
 			activar( $(this), $('.pasos-container .boton') );
 		});
 
+		$('body').on('click', '.secciones a' ,function(e){
+			e.preventDefault();
+			loadConfiguracion($(this));
+		});
+
 		alturaTabla();
 
 		// /*** RESPONSIVE ***/
@@ -71,6 +76,16 @@
 				}
 			}
 		});
+	}
+
+	function loadConfiguracion(elemento){
+		var dataSeccion = elemento.data('seccion');
+		console.log(dataSeccion);
+		var seccion = '.seccion-'+dataSeccion;
+		console.log(seccion);
+		//stepCompleted.addClass('completed');
+		$('.frame-config').empty();
+		$('.frame-config').load('area-de-configuracion.html '+seccion);
 	}
 
 	function activar(elemento, hermanos){
