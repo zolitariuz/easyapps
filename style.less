@@ -261,6 +261,7 @@ h1{ display: inline-block; vertical-align: middle; width: 31%; margin: 0 1% 0 1%
 }
 h2{ margin: 0 0 (@margen/2) 0; .font(3em, 1.2em); color: @claro; }
 h3{ margin: 0 0 (@margen/2) 0; .font(1.5em, 1, 600); color: @obscuro; }
+h4{ margin: 0 0 (@margen/2) 0; .font(1em, 1, 600); color: @obscuro; }
 
 button, .boton{ padding: (@margen/3); border: none; .font(1.2em, 1); text-decoration: none; text-align: center; .border-radius; .transition; cursor: pointer;
 	&.hollow{ color: @highlight; background: transparent; border: 2px solid @highlight;
@@ -275,6 +276,10 @@ button, .boton{ padding: (@margen/3); border: none; .font(1.2em, 1); text-decora
 
 	&.white{ border: 2px solid @claro; color: @claro;
 		&:hover, &.active{ background: @claro; color: @highlight; }
+	}
+
+	&.alternate{ border: 2px solid @highlight; color: @highlight; background: @claro;
+		&:hover, &.active{ background: @highlight; color: @claro; }
 	}
 }
 
@@ -318,7 +323,7 @@ form{
 .tabla{ margin: 0 0 @margen 0; border-bottom: 1px solid @highlight; border-right: 1px solid @highlight;
 	.fila{ border-top: 1px solid @highlight; border-left: 1px solid @highlight;
 		&.header{ background: @highlight; color: @claro; }
-		h4{ .font(1.6em, 1, 600); }
+		h4{ .font(1.6em, 1, 600); color: @claro; }
 		p{ margin: 0; .font(1em, 1);
 			span{ .font(0.8em, 1); }
 		}
@@ -362,9 +367,117 @@ nav{ display: inline-block; vertical-align: middle; width: 50%; margin: 0 1% 0 1
 .indicador{ width: (@margen*2); height: (@margen*2); margin: 0 auto (@margen/2) auto; border: 3px solid @obscuro; .border-radius; background: @claro; position: relative; z-index: 2; .transition;
 	p{ margin: 0; .font(1.1em, (@margen*2)- 0.4, 600); text-align: center; color: @highlight;}
 }
+
 hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highlight, @obscuro); background-size: 200% 100%; background-position: right top; position: absolute; top: (@margen - 0.05); left: -50%; z-index: 1; .transition; }
 
-.pasos-container{ margin: 0 0 (@margen*2); }
+.pasos-container{ margin: 0 0 (@margen*2);
+	h2{color: @obscuro; .font(2.5em, 2.5em, 800)}
+	input[type="text"]{width: 50%; .center; .block; .margin-bottom;}
+}
+
+.secciones, .config, .agregadas{
+	h3{border-bottom: solid 1px @highlight; padding-bottom:@margen/2; .font(1.2em, 1.5em, 800); text-align: center;}
+	h4{color: @highlight; .font(1.5em, 1em, 400);}
+	ul{
+		li{margin-bottom: @margen; padding:@margen/2; list-style: none; border: solid 2px @highlight; border-radius: 5px; color: lighten(@obscuro,20%); .transition;
+			a{ text-decoration: none; color: lighten(@obscuro,20%);}
+			
+			&:hover{background: @highlight; color: @claro;
+				a{color: @claro;}
+			}
+		}
+	}
+}
+
+.frame-config{
+	h3{border: none; padding-bottom:@margen/2; .font(1.5em, 1.5em, 500); text-align: left; color: @highlight;}
+	h4{color: @highlight; .font(1em, 1em, 500);}
+	p{.font(1.2em, 1.5em, 200);}
+	i{color: @highlight;}
+	ul{
+		li{margin-bottom: @margen; padding:@margen/2; list-style: none; border: solid 2px @highlight; border-radius: 5px; color: lighten(@obscuro,20%); .transition;
+			a{ text-decoration: none; color: lighten(@obscuro,20%);}
+			
+			&:hover{background: @highlight; color: @claro;
+				a{color: @claro;}
+			}
+		}
+	}
+
+	.text-right{text-align: right;}
+	.text-left{text-align: left;}
+}
+
+.forma{
+	form{
+    	fieldset {
+		  margin-bottom: (@margen*2);			  
+		}
+
+		legend{.font(1.2em, 1.5em, 400); margin-bottom: @margen;
+		}
+
+    	label {
+		    /* To make sure that all label have the same size and are properly align */
+		    display: inline-block; vertical-align: middle; margin-bottom: (@margen/4); .font(1.2em, 1.5em, 400); width: 100%;
+		}
+
+		.alternate{.font(1em, 1em, 200);}
+
+		input[type="text"],
+		input[type="password"],
+		input[type="date"],
+		input[type="datetime"],
+		input[type="email"],
+		input[type="number"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="time"],
+		input[type="url"],
+		input[type="file"],
+		textarea,
+		select {width:100%; background: @claro; border: solid 1px @highlight; height: auto; margin: 0 0 @margen 0; outline: 0; padding: (@margen/4); color: #8a97a0; box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; .font(1em, 1.5em, 200);
+		}
+
+		input[type="radio"],input[type="checkbox"]{
+		    background-color: @claro; border-radius: 10px; cursor: pointer; display: inline-block; height: 20px; width: 20px; -webkit-appearance: none;.transition;
+		&:focus{outline: none; background: @highlight;}
+
+		}
+
+		.bloque-more{border: solid 2px @highlight; border-radius: 5px; padding:@margen;}
+
+
+		//duda sobre inputs con imagen
+
+
+		.icono-42{width: 42px; height:42px; border: none;}
+		.img-fondo{width: 220px; height:106px; border: none;}
+		.logo{width: 102px; height:102px; border: none;}
+
+		.layout-frame{position: relative;}
+
+		//.layout{position: absolute; bottom: 0;}
+		.rss-layout-2{width: 224px; height: 100px;}
+		.rss-layout-1{width: 224px; height: 90px;}
+		.fotos-layout-1{width: 62px; height: 62px;}
+		.fotos-layout-2{width: 182px; height: 100px;}
+		.fotos-layout-3{width: 183px; height: 183px;}
+		.video-layout-1{width: 222px; height:85px;}
+		.video-layout-2{width: 222px; height:100px;}
+		.audio-layout-1{width: 222px; height:85px;}
+		.audio-layout-2{width: 222px; height:100px;}
+		.fecha-evento{width: 60% !important; margin-right: 5% !important;}
+		.hora-evento{width: 10% !important; margin-right: 5%;}
+	}	
+	.imagenes-listas{border-top: solid 1px @highlight; border-bottom: solid 1px @highlight; color: @obscuro; padding: @margen/2; margin-bottom: @margen/2;}
+}
+
+.revision{ border-bottom: solid 1px @highlight;
+	h4{color: @highlight; .font(1.2em, 1.5em, 800);}
+	em{color: @highlight !important;}
+
+}
 
 /*** FOOTER ***/
 

@@ -1,0 +1,590 @@
+<div class="columna xmall-10 center">
+	<h4 class="text-center">Haz click en una de las secciones de la izquierda para configurarla en esta área y agregarla a tu app.</h4>
+</div>
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Web</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna">
+
+			<label for="url-abrir">URL a abrir<i>*</i></label>
+			<input id="url-abrir"type="url" class="columna">
+
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset>
+
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--WEB-->
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Vista general</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="nombre-seccion">Nombre de la sección<i>*</i></label>
+			<input id="nombre-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Nombre de la sección-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+		
+		<fieldset>
+			<label for="imagen-fondo" class="full">Imagen de fondo <i>mínimo 320px por 500px</i></label>
+			<input id="imagen-fondo" type="image" src="images/config/img-fondo.png" class="img-fondo full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona una imagen</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube una imagen</button>
+		</fieldset><!--imagen fondo-->
+
+		<fieldset>
+			<label for="contenido">Contenido<i>*</i></label>
+			<textarea id="contenido"type="text" class="columna no-margin"></textarea>
+		</fieldset><!--Titulo-->
+
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--VISTA GENERAL-->
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">RSS</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Nombre de la sección-->
+
+		<fieldset>
+			<label for="titulo-seccion">URL del RSS feed<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Url de RSS-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+		
+		<fieldset>
+			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
+			<div class="columna xmall-4">
+				<img src="images/config/rss-layout-1.png" alt="" class="rss-layout-1">
+				<input id="rss-layout" type="radio" class="full center block margin-bottom">
+			</div>
+			<div class="columna xmall-4">
+				<img src="images/config/rss-layout-2.png" alt="" class="rss-layout-2">
+				<input id="rss-layout" type="radio" class="full center block margin-bottom">
+			</div>		
+		</fieldset><!--Selecciona un layout-->
+
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--RSS-->
+
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Galería de fotos</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+
+		<fieldset>
+			<label for="descripcion-galeria-fotos">Descripción de la galería</label>
+			<textarea id="descripcion-galeria-fotos" class="columna no-margin">
+			</textarea>
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>
+			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
+			<div class="columna xmall-12 layout-frame">
+				<div class="columna xmall-2 layout">
+					<input id="fotos-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/fotos-layout-1.png" alt="" class="fotos-layout-1 center block margin-bottom">
+					
+				</div>
+				<div class="columna xmall-4 layout">
+					<input id="fotos-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/fotos-layout-2.png" alt="" class="fotos-layout-2 center block margin-bottom">
+					
+				</div>
+				<div class="columna xmall-4 layout">
+					<input id="fotos-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/fotos-layout-3.png" alt="" class="fotos-layout-3 center block margin-bottom">
+					
+				</div>
+			</div>					
+		</fieldset><!--Selecciona un layout-->
+
+		<fieldset class="bloque-more">
+			<legend for="agregar-fotos" class="columna xmall-12">Agregar fotos a la galería</legend>
+			<label for="nombre-foto">Nombre</label>
+			<input id="nombre-foto" type="text" class="columna no-margin">
+			<label for="descripcion-foto">URL<i>*</i></label>
+			<input id="nombre-foto" type="file" class="columna margin-bottom">
+			<button type="submit" class="alternate right">agregar</button>
+		</fieldset><!--Agregar videos-->
+		<fieldset>
+			<div class="full clearfix margin-bottom">
+				<legend class="columna xmall-12">Fotos de la galería</legend>
+				<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-down right"></i></div>
+
+				<label for="nombre-foto">Nombre</label>
+				<input id="nombre-foto" type="text" class="columna no-margin">
+				<label for="descripcion-foto">Descripción<i>*</i></label>
+				<input id="nombre-foto" type="text" class="columna margin-bottom">
+				<img src="images/config/caption-video.png" class="columna xmall-6 center block">
+				<button type="submit" class="alternate right">update</button>
+			</div>
+		</fieldset><!--fotos listas-->
+		
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--GALERIA DE FOTOS-->
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Galería de videos</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+
+		<fieldset>
+			<label for="descripcion-galeria-video">Descripción de la galería</label>
+			<textarea id="descripcion-galeria-video" class="columna no-margin">
+			</textarea>
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>
+			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
+			<div class="columna xmall-12 layout-frame">
+				<div class="columna xmall-5 layout">
+					<input id="video-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/video-layout-1.png" alt="" class="video-layout-1 center block margin-bottom">
+					
+				</div>
+				<div class="columna xmall-5 layout">
+					<input id="video-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/video-layout-2.png" alt="" class="video-layout-2 center block margin-bottom">
+					
+				</div>
+			</div>					
+		</fieldset><!--Selecciona un layout-->
+
+		<fieldset class="bloque-more">
+			<legend class="columna xmall-12">Agregar videos a la galería</legend>
+			<label for="nombre-video">Nombre</label>
+			<input id="nombre-video" type="text" class="columna no-margin">
+			<label for="url-video">URL<i>*</i></label>
+			<input id="url-video" type="url" class="columna margin-bottom">
+			<button type="submit" class="alternate right">agregar</button>
+		</fieldset><!--Agregar videos-->
+		<fieldset>
+			<div class="full clearfix margin-bottom">
+				<legend class="columna xmall-12">Videos de la galería</legend>
+				<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-down right"></i></div>
+
+				<label for="nombre-video">Nombre</label>
+				<input id="nombre-video" type="text" class="columna no-margin">
+				<label for="url-video">URL<i>*</i></label>
+				<input id="url-video" type="url" class="columna margin-bottom">
+				<img src="images/config/caption-video.png" class="columna xmall-6 center block">
+				<button type="submit" class="alternate right">update</button>
+			</div>
+		</fieldset><!--videos listos-->
+		
+
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--GALERIA DE VIDEO-->
+
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Galería de audio</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+
+		<fieldset>
+			<label for="descripcion-galeria-audio">Descripción de la galería</label>
+			<textarea id="descripcion-galeria-audio" class="columna no-margin">
+			</textarea>
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>
+			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
+			<div class="columna xmall-12 layout-frame">
+				<div class="columna xmall-5 layout">
+					<input id="audio-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/video-layout-1.png" alt="" class="audio-layout-1 center block margin-bottom">
+					
+				</div>
+				<div class="columna xmall-5 layout">
+					<input id="audio-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/video-layout-2.png" alt="" class="audio-layout-2 center block margin-bottom">
+					
+				</div>
+			</div>					
+		</fieldset><!--Selecciona un layout-->
+
+		<fieldset class="bloque-more">
+			<legend for="agregar-audio" class="columna xmall-12">Agregar pistas de audio a la galería</legend>
+			<label for="nombre-audio">Nombre</label>
+			<input id="nombre-audio" type="text" class="columna no-margin">
+			<label for="url-audio">URL<i>*</i></label>
+			<input id="url-audio" type="url" class="columna margin-bottom">
+			<button type="submit" class="alternate right">agregar</button>
+		</fieldset><!--Agregar audio-->
+		<fieldset>
+			<div class="full clearfix margin-bottom">
+				<legend class="columna xmall-12">Pistas de audio de la galería</legend>
+				<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-down right"></i></div>
+
+				<label for="nombre-foto">Nombre</label>
+				<input id="nombre-foto" type="text" class="columna no-margin">
+				<label for="url-audio">URL<i>*</i></label>
+				<input id="url-audio" type="url" class="columna margin-bottom">
+				<img src="" class="columna xmall-6 center block">
+				<button type="submit" class="alternate right">update</button>
+			</div>
+		</fieldset><!--audios listos-->
+		
+
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--GALERIA DE AUDIO-->
+
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Eventos</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+
+		<fieldset>
+			<label for="descripcion-galeria-audio">Descripción de la galería</label>
+			<textarea id="descripcion-galeria-audio" class="columna no-margin">
+			</textarea>
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>
+			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
+			<div class="columna xmall-12 layout-frame">
+				<div class="columna xmall-5 layout">
+					<input id="audio-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/video-layout-1.png" alt="" class="audio-layout-1 center block margin-bottom">
+					
+				</div>
+				<div class="columna xmall-5 layout">
+					<input id="audio-layout" type="radio" class="full center block margin-bottom">
+					<img src="images/config/video-layout-2.png" alt="" class="audio-layout-2 center block margin-bottom">
+					
+				</div>
+			</div>					
+		</fieldset><!--Selecciona un layout-->
+
+		<fieldset class="bloque-more">
+			<legend for="agregar-audio" class="columna xmall-12">Agregar evento</legend>
+			<label for="nombre-evento">Nombre<i>*</i></label>
+			<input id="nombre-evento" type="text" class="columna no-margin">
+			<label for="imagen-evento">Selecciona una imagen<i>*</i></label>
+			<input id="imagen-evento" type="file" class="columna margin-bottom">
+			<label for="url-evento">URL<i>*</i></label>
+			<input id="url-audio" type="url" class="columna margin-bottom">
+			<label for="fecha-evento">Fecha del evento<i>*</i></label>
+			<input id="fecha-evento" type="date" class="columna fecha-evento margin-bottom">
+			<select class="columna xmall-12 hora-evento" id="hora" name="hora">
+		    	<option value="1">1</option>
+		    	<option value="2">2</option>
+		    	<option value="3">3</option>
+		    	<option value="4">4</option>
+		    	<option value="5">5</option>
+		    	<option value="6">6</option>
+		    	<option value="7">7</option>
+		    	<option value="8">8</option>
+		    	<option value="9">9</option>
+		    	<option value="10">10</option>
+		    	<option value="11">11</option>
+		    	<option value="12">12</option>
+		    	<option value="13">13</option>
+		    	<option value="14">14</option>
+		    	<option value="14">14</option>
+		    	<option value="15">15</option>
+		    	<option value="16">16</option>
+		    	<option value="18">18</option>
+		    	<option value="19">19</option>
+		    	<option value="20">20</option>
+		    	<option value="21">21</option>
+		    	<option value="22">22</option>
+		    	<option value="23">23</option>
+		    	<option value="24">24</option>
+		    </select>
+		    <select class="columna xmall-12 hora-evento" id="minuto" name="minuto">
+		    	<option value="1">1</option>
+		    	<option value="2">2</option>
+		    	<option value="3">3</option>
+		    	<option value="4">4</option>
+		    	<option value="5">5</option>
+		    	<option value="6">6</option>
+		    	<option value="7">7</option>
+		    	<option value="8">8</option>
+		    	<option value="9">9</option>
+		    	<option value="10">10</option>
+		    	<option value="11">11</option>
+		    	<option value="12">12</option>
+		    	<option value="13">13</option>
+		    	<option value="14">14</option>
+		    	<option value="14">14</option>
+		    	<option value="15">15</option>
+		    	<option value="16">16</option>
+		    	<option value="18">18</option>
+		    	<option value="19">19</option>
+		    	<option value="20">20</option>
+		    	<option value="21">21</option>
+		    	<option value="22">22</option>
+		    	<option value="23">23</option>
+		    	<option value="24">24</option>
+		    	<option value="25">25</option>
+		    	<option value="26">26</option>
+		    	<option value="27">27</option>
+		    	<option value="28">28</option>
+		    	<option value="29">29</option>
+		    	<option value="30">30</option>
+		    	<option value="31">31</option>
+		    	<option value="32">32</option>
+		    	<option value="33">33</option>
+		    	<option value="34">34</option>
+		    	<option value="35">35</option>
+		    	<option value="36">36</option>
+		    	<option value="37">37</option>
+		    	<option value="38">38</option>
+		    	<option value="39">39</option>
+		    	<option value="40">40</option>
+		    	<option value="41">41</option>
+		    	<option value="42">42</option>
+		    	<option value="43">43</option>
+		    	<option value="44">44</option>
+		    	<option value="45">45</option>
+		    	<option value="46">46</option>
+		    	<option value="47">47</option>
+		    	<option value="48">48</option>
+		    </select>    
+
+			<label for="descripcion-evento">Descripción</label>
+			<textarea id="descripcion-evento" class="columna margin-bottom">
+			</textarea>
+			<label for="direccion">Dirección</label>
+			<input id="direccion" type="text" class="columna margin-bottom">
+
+			<div class="columna xmall-6">
+				<label for="latitud">Latitud</label>
+				<input id="latitud" type="text" class="margin-bottom">
+			</div>
+			<div class="columna xmall-6">
+				<label for="longitud">Longitud</label>
+				<input id="longitud" type="text" class="margin-bottom">
+			</div>
+
+			<label for="url-evento">URL<i>*</i></label>
+			<input id="url-evento" type="url" class="columna margin-bottom">
+			<button type="submit" class="alternate right">agregar</button>
+		</fieldset><!--Agregar evento-->
+		<fieldset>
+			<div class="full clearfix margin-bottom">
+				<legend class="columna xmall-12">Eventos agregados</legend>
+				<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-left right"></i></div>
+			</div>
+		</fieldset><!--eventos listos-->
+		
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--EVENTOS-->
+
+
+
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Mapa</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+
+		<fieldset class="bloque-more">
+			<legend for="agregar-audio" class="columna xmall-12">Información del nuevo punto</legend>
+			<label for="nombre-evento">Nombre<i>*</i></label>
+			<input id="nombre-evento" type="text" class="columna no-margin">
+			<label for="descripcion-evento">Descripción</label>
+			<textarea id="descripcion-evento" class="columna margin-bottom">
+			</textarea>
+			<label for="direccion">Dirección</label>
+			<input id="direccion" type="text" class="columna margin-bottom">
+
+			<div class="columna xmall-6">
+				<label for="latitud">Latitud</label>
+				<input id="latitud" type="text" class="margin-bottom">
+			</div>
+			<div class="columna xmall-6">
+				<label for="longitud">Longitud</label>
+				<input id="longitud" type="text" class="margin-bottom">
+			</div>
+
+			<button type="submit" class="alternate right">agregar</button>
+		</fieldset><!--Agregar punto-->
+		<fieldset>
+			<div class="full clearfix margin-bottom">
+				<legend class="columna xmall-12">Puntos</legend>
+				<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-left right"></i></div>
+			</div>
+		</fieldset><!--puntos-->
+		
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--MAPA-->
+
+
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Contacto</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+
+		<fieldset>
+			<label for="nombre-contacto">Nombre del establecimiento o persona a contactar<i>*</i></label>
+			<input id="nombre-contacto" type="text" class="columna no-margin">
+			<label for="direccion">Dirección</label>
+			<input id="direccion" type="text" class="columna margin-bottom">
+			<div class="columna xmall-6">
+				<label for="latitud">Latitud</label>
+				<input id="latitud" type="text" class="margin-bottom">
+			</div>
+			<div class="columna xmall-6">
+				<label for="longitud">Longitud</label>
+				<input id="longitud" type="text" class="margin-bottom">
+			</div>
+			<label for="url-contacto">URL</label>
+			<input id="url-contacto" type="url" class="columna margin-bottom">
+			<label for="email-contacto">email</label>
+			<input id="email-contacto" type="email" class="columna margin-bottom">
+			<label for="tel-contacto">Teléfono</label>
+			<input id="tel-contacto" type="tel" class="columna margin-bottom">
+			<label for="url-twitter">URL para twitter</label>
+			<input id="url-twitter" type="url" class="columna margin-bottom">
+			<label for="url-facebook">URL para facebook</label>
+			<input id="url-facebook" type="url" class="columna margin-bottom">
+			<label for="descripcion-contacto">Descripción</label>
+			<textarea id="descripcion-contacto" class="columna margin-bottom">
+			</textarea>
+			<label for="lista-contactos">¿Deseas añadir tu lista de contactos?</label>
+			<input type="checkbox" value="sí" title="si" class="columna xmall-1"><p>Sí</p>
+			<input type="checkbox" value="sí" title="no" class="columna xmall-1"><p>No</p>
+
+
+			<button type="submit" class="alternate right">agregar</button>
+		</fieldset><!--Agregar contacto-->
+		
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--CONTACTO-->
+
+
+
+<div class="frame-config forma">
+	<h3 class="columna xmall-6">Lista</h3>
+	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
+	<form class=" columna xmall-12 nombre-app text-left" action="/">
+		<fieldset>
+			<label for="titulo-seccion">Título de la sección<i>*</i></label>
+			<input id="titulo-seccion"type="text" class="columna no-margin">
+		</fieldset><!--Título de la sección-->
+		
+		<fieldset>	
+			<label for="icono" class="full">Ícono <i>mínimo 42px por 42px</i></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
+			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
+		</fieldset><!--icono-->
+
+		<fieldset>
+			<label for="etxra">Extra<i>*</i></label>
+			<input id="extra" type="text" class="columna no-margin">
+			<label for="ligar-modulo">Ligar a</label>
+			<select class="columna" id="modulos-creados" name="modulos-creados">
+		    	<option value="1">galería 1</option>
+		    	<option value="2">noticias</option>
+		    	<option value="3">cena de gala</option>
+		    </select>
+		</fieldset><!--Crear lista-->
+		
+		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
+	</form>
+</div><!--LISTA-->
