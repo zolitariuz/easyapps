@@ -74,6 +74,9 @@
 				if ( $('.masonry').length > 0 ){
 					callMasonry();
 				}
+				if ( $('.tabla').length > 0 ){
+					alturaTabla();
+				}
 			}
 		});
 	}
@@ -83,8 +86,6 @@
 		var seccion = '.seccion-'+dataSeccion;
 		$('.secciones li').removeClass('active');
 		elemento.parent().addClass('active');
-		//var seccionActiva = $(".seccion[data-seccion='"+seccion+"']");
-		//stepCompleted.addClass('completed');
 		$('.frame-config').empty();
 		$('.frame-config').load('area-de-configuracion.html '+seccion);
 	}
@@ -124,8 +125,6 @@
 			$(this).children('.span').css({
 				minHeight: outerMaxHeight
 			});
-
-			console.log(maxHeight);
 		});
 	}
 
