@@ -16,7 +16,6 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset>
 
 		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
@@ -35,10 +34,9 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset><!--icono-->
 		<fieldset>
-			<label for="imagen-fondo" class="full">Imagen de fondo <i>mínimo 320px por 500px</i></label>
+			<label for="imagen-fondo" class="full">Imagen de fondo <span>mínimo 320px por 500px</span></label>
 			<input id="imagen-fondo" type="image" src="images/config/img-fondo.png" class="img-fondo full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona una imagen</button>
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube una imagen</button>
@@ -51,37 +49,45 @@
 	</form>
 </div><!--VISTA GENERAL-->
 
-<div class="forma seccion-rss">
+<div class="forma seccion-rss full clearfix">
 	<h3 class="columna xmall-6">RSS</h3>
 	<p class="columna xmall-6 text-right"><i>*</i> Campos obligatorios</p>
-	<form class=" columna xmall-12 nombre-app text-left" action="/">
-		<fieldset>
+	<form class="  clearfix columna xmall-12 nombre-app text-left" action="/">
+		<fieldset class="clearfix">
 			<label for="titulo-seccion">Título de la sección<i>*</i></label>
 			<input id="titulo-seccion"type="text" class="columna no-margin">
 		</fieldset><!--Nombre de la sección-->
 
-		<fieldset>
+		<fieldset class="clearfix">
+			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
+			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
+			<button class="alternate big center" type="submit">selecciona un ícono</button>
+		</fieldset><!--icono-->
+
+		<fieldset class="clearfix">
 			<label for="titulo-seccion">URL del RSS feed<i>*</i></label>
 			<input id="titulo-seccion"type="text" class="columna no-margin">
 		</fieldset><!--Url de RSS-->
 
 		<fieldset>
-			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
-			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
-		</fieldset><!--icono-->
+			<label for="layout" class="block">Selecciona un layout <i>*</i></label>
+			<label class="layout-select rss columna xmall-12 large-6">
+			  <input type="radio" name="layout"value="rss-layout-1" />
+			  <img src="images/config/rss-layout-1.png" class="rss-layout-1">
+			</label>
+			<label class="layout-select rss columna xmall-12 large-6">
+			  <input type="radio" name="layout" value="rss-layout-2" />
+			  <img src="images/config/rss-layout-2.png" class="rss-layout-2">
+			</label>
+				<!--<div class="columna xmall-6 layout-choice ">
+					<img src="images/config/rss-layout-1.png" alt="" class="rss-layout-1 ">
+					<input id="rss-layout" type="radio" class="columna xmall-2 margin-bottom">
+				</div>
 
-		<fieldset>
-			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
-			<div class="columna xmall-4">
-				<img src="images/config/rss-layout-1.png" alt="" class="rss-layout-1">
-				<input id="rss-layout" type="radio" class="full center block margin-bottom">
-			</div>
-			<div class="columna xmall-4">
-				<img src="images/config/rss-layout-2.png" alt="" class="rss-layout-2">
-				<input id="rss-layout" type="radio" class="full center block margin-bottom">
-			</div>
+				<div class="columna xmall-6 layout-choice">
+					<img src="images/config/rss-layout-2.png" alt="" class="">
+					<input id="rss-layout" type="radio" class="full center block margin-bottom">
+				</div>-->
 		</fieldset><!--Selecciona un layout-->
 
 		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
@@ -101,7 +107,6 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset><!--icono-->
 
 		<fieldset>
@@ -111,8 +116,22 @@
 		</fieldset><!--Título de la sección-->
 
 		<fieldset>
-			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
-			<div class="columna xmall-12 layout-frame">
+			<label for="layout" class="full">Selecciona un layout por favor <i>*</i></label>
+
+			<label class="layout-select fotos columna xmall-12 large-2">
+			  <input type="radio" name="layout"value="fotos-layout-1" />
+			  <img src="images/config/fotos-layout-1.png" class="fotos-layout-1 columna">
+			</label>
+			<label class="layout-select fotos columna xmall-12 large-5">
+			  <input type="radio" name="layout" value="fotos-layout-2" />
+			  <img src="images/config/fotos-layout-2.png" class="fotos-layout-2 ">
+			</label>
+			<label class="layout-select fotos columna xmall-12 large-5">
+			  <input type="radio" name="layout" value="fotos-layout-2" />
+			  <img src="images/config/fotos-layout-3.png" class="fotos-layout-3">
+			</label>
+
+			<!--<div class="columna xmall-12 layout-frame">
 				<div class="columna xmall-2 layout">
 					<input id="fotos-layout" type="radio" class="full center block margin-bottom">
 					<img src="images/config/fotos-layout-1.png" alt="" class="fotos-layout-1 center block margin-bottom">
@@ -128,7 +147,7 @@
 					<img src="images/config/fotos-layout-3.png" alt="" class="fotos-layout-3 center block margin-bottom">
 
 				</div>
-			</div>
+			</div>-->
 		</fieldset><!--Selecciona un layout-->
 
 		<fieldset class="bloque-more">
@@ -139,17 +158,43 @@
 			<input id="nombre-foto" type="file" class="columna margin-bottom">
 			<button type="submit" class="alternate right">agregar</button>
 		</fieldset><!--Agregar fotos-->
+		
 		<fieldset>
-			<div class="full clearfix margin-bottom">
-				<legend class="columna xmall-12">Fotos de la galería</legend>
-				<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-down right"></i></div>
+			<div class="full clearfix uploads">
+				<div class="foto-thumb">
+					<img src="images/config/fotos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="foto-thumb clearfix">
+					<img src="images/config/fotos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="foto-thumb">
+					<img src="images/config/fotos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="foto-thumb clearfix">
+					<img src="images/config/fotos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
 
-				<label for="nombre-foto">Nombre</label>
-				<input id="nombre-foto" type="text" class="columna no-margin">
-				<label for="descripcion-foto">Descripción<i>*</i></label>
-				<input id="nombre-foto" type="text" class="columna margin-bottom">
-				<img src="images/config/caption-video.png" class="columna xmall-6 center block">
-				<button type="submit" class="alternate right">update</button>
+				<div class="foto-thumb">
+					<img src="images/config/fotos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="foto-thumb clearfix">
+					<img src="images/config/fotos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="foto-thumb">
+					<img src="images/config/fotos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="foto-thumb clearfix">
+					<img src="images/config/fotos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+
 			</div>
 		</fieldset><!--fotos listas-->
 
@@ -170,7 +215,6 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset><!--icono-->
 
 		<fieldset>
@@ -181,7 +225,16 @@
 
 		<fieldset>
 			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
-			<div class="columna xmall-12 layout-frame">
+
+			<label class="layout-select video columna xmall-12 large-6">
+			  <input type="radio" name="layout"value="video-layout-1" />
+			  <img src="images/config/video-layout-1.png" class="video-layout-1 columna">
+			</label>
+			<label class="layout-select video columna xmall-12 large-6">
+			  <input type="radio" name="layout" value="video-layout-2" />
+			  <img src="images/config/video-layout-2.png" class="video-layout-2 ">
+			</label>
+			<!--<div class="columna xmall-12 layout-frame">
 				<div class="columna xmall-5 layout">
 					<input id="video-layout" type="radio" class="full center block margin-bottom">
 					<img src="images/config/video-layout-1.png" alt="" class="video-layout-1 center block margin-bottom">
@@ -192,7 +245,7 @@
 					<img src="images/config/video-layout-2.png" alt="" class="video-layout-2 center block margin-bottom">
 
 				</div>
-			</div>
+			</div>-->
 		</fieldset><!--Selecciona un layout-->
 
 		<fieldset class="bloque-more">
@@ -204,17 +257,44 @@
 			<button type="submit" class="alternate right">agregar</button>
 		</fieldset><!--Agregar videos-->
 		<fieldset>
-			<div class="full clearfix margin-bottom">
-				<legend class="columna xmall-12">Videos de la galería</legend>
-				<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-down right"></i></div>
+			<fieldset>
+			<div class="full center block clearfix uploads">
+				<div class="video-thumb">
+					<img src="images/config/videos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="video-thumb clearfix">
+					<img src="images/config/videos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="video-thumb">
+					<img src="images/config/videos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="video-thumb clearfix">
+					<img src="images/config/videos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
 
-				<label for="nombre-video">Nombre</label>
-				<input id="nombre-video" type="text" class="columna no-margin">
-				<label for="url-video">URL<i>*</i></label>
-				<input id="url-video" type="url" class="columna margin-bottom">
-				<img src="images/config/caption-video.png" class="columna xmall-6 center block">
-				<button type="submit" class="alternate right">update</button>
+				<div class="video-thumb">
+					<img src="images/config/videos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="video-thumb clearfix">
+					<img src="images/config/videos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="video-thumb">
+					<img src="images/config/videos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+				<div class="video-thumb clearfix">
+					<img src="images/config/videos-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+				</div>
+
 			</div>
+		</fieldset><!--fotos listas-->
 		</fieldset><!--videos listos-->
 
 
@@ -235,7 +315,6 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset><!--icono-->
 
 		<fieldset>
@@ -246,7 +325,16 @@
 
 		<fieldset>
 			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
-			<div class="columna xmall-12 layout-frame">
+
+			<label class="layout-select audio columna xmall-12 large-6">
+			  <input type="radio" name="layout"value="audio-layout-1" />
+			  <img src="images/config/video-layout-1.png" class="audio-layout-1 columna">
+			</label>
+			<label class="layout-select audio columna xmall-12 large-6">
+			  <input type="radio" name="layout" value="audio-layout-2" />
+			  <img src="images/config/video-layout-2.png" class="audio-layout-2 ">
+			</label>
+			<!--<div class="columna xmall-12 layout-frame">
 				<div class="columna xmall-5 layout">
 					<input id="audio-layout" type="radio" class="full center block margin-bottom">
 					<img src="images/config/video-layout-1.png" alt="" class="audio-layout-1 center block margin-bottom">
@@ -257,7 +345,7 @@
 					<img src="images/config/video-layout-2.png" alt="" class="audio-layout-2 center block margin-bottom">
 
 				</div>
-			</div>
+			</div>-->
 		</fieldset><!--Selecciona un layout-->
 
 		<fieldset class="bloque-more">
@@ -269,16 +357,28 @@
 			<button type="submit" class="alternate right">agregar</button>
 		</fieldset><!--Agregar audio-->
 		<fieldset>
-			<div class="full clearfix margin-bottom">
-				<legend class="columna xmall-12">Pistas de audio de la galería</legend>
-				<div class="span xmall-12 imagenes-listas">nombre que le hayan puesto <i class="fa fa-caret-down right"></i></div>
-
-				<label for="nombre-foto">Nombre</label>
-				<input id="nombre-foto" type="text" class="columna no-margin">
-				<label for="url-audio">URL<i>*</i></label>
-				<input id="url-audio" type="url" class="columna margin-bottom">
-				<img src="" class="columna xmall-6 center block">
-				<button type="submit" class="alternate right">update</button>
+			<div class="full center block clearfix uploads">
+				<div class="audio-thumb">
+					<img src="images/config/audio-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+					<p class="text-center">Audio_uno.mp3</p>
+				</div>
+				
+				<div class="audio-thumb clearfix">
+					<img src="images/config/audio-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+					<p class="text-center">Audio_dos.mp3</p>
+				</div>
+				<div class="audio-thumb">
+					<img src="images/config/audio-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+					<p class="text-center">Audio_tres.mp3</p>
+				</div>
+				<div class="audio-thumb">
+					<img src="images/config/audio-uploads/01.png" alt="" class="imagen">
+					<div class="delete"><i class="fa fa-times fa-3x"></i></div>
+					<p class="text-center">Audio_cuatro.mp3</p>
+				</div>
 			</div>
 		</fieldset><!--audios listos-->
 
@@ -300,7 +400,6 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset><!--icono-->
 
 		<fieldset class="bloque-more">
@@ -433,7 +532,6 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset><!--icono-->
 
 		<fieldset class="bloque-more">
@@ -481,7 +579,6 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset><!--icono-->
 
 		<fieldset>
@@ -514,10 +611,6 @@
 			<input type="checkbox" value="sí" title="si" class="columna xmall-1"><p>Sí</p>
 			<input type="checkbox" value="sí" title="no" class="columna xmall-1"><p>No</p>
 
-
-			<button type="submit" class="alternate right">agregar</button>
-		</fieldset><!--Agregar contacto-->
-
 		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
 	</form>
 </div><!--CONTACTO-->
@@ -535,22 +628,18 @@
 			<label for="icono" class="full">Ícono <span>mínimo 42px por 42px</span></label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube un ícono</button>
 		</fieldset><!--icono-->
 
 		<fieldset>
 			<label for="layout" class="full">Selecciona un layout <i>*</i></label>
-			<div class="columna xmall-12 layout-frame">
-				<div class="columna xmall-2 layout">
-					<input id="fotos-layout" type="radio" class="full center block margin-bottom">
-					<img src="images/config/listas-layout-1.png" alt="" class="fotos-layout-1 center block margin-bottom">
-
-				</div>
-				<div class="columna xmall-4 layout">
-					<input id="fotos-layout" type="radio" class="full center block margin-bottom">
-					<img src="images/config/fotos-layout-2.png" alt="" class="listas-layout-2 center block margin-bottom">
-				</div>
-			</div>
+			<label class="layout-select audio columna xmall-12 large-6">
+			  <input type="radio" name="layout"value="audio-layout-1" />
+			  <img src="images/config/listas-layout-1.png" class="listas-layout-1 columna">
+			</label>
+			<label class="layout-select audio columna xmall-12 large-6">
+			  <input type="radio" name="layout" value="listas-layout-2" />
+			  <img src="images/config/listas-layout-2.png" class="listas-layout-2 ">
+			</label>
 		</fieldset><!--Selecciona un layout-->
 
 		<fieldset class="bloque-layout">
