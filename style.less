@@ -421,8 +421,9 @@ hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highli
 
 		ul{width: 100%; margin:0; float: right; 
 			li{background: @highlight; color: @claro; border: none; text-align: left; padding: @margen/4;
-				i{color: @claro; margin-right: @margen/4; vertical-align: middle;}	
-				
+				a{width: 20%; display: inline-block;  float: right; cursor: pointer; padding: 0;
+					i{color: @claro; margin-right: @margen/4; vertical-align: middle;}	
+				}
 			}
 
 			ul{width: 80%; .right;
@@ -568,16 +569,22 @@ hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highli
 	}
 	
 	.video-thumb{width: 31.33%; height: auto; float:left; margin:1%; position: relative;
-		&:hover{
-			.delete{visibility: visible;}
+		p{ padding: 0 @margen/4;
+			i{ font-size: 20px; float: right; color: darken(@claro,40%);}
 		}
-	}	
+	}
+
+	iframe{width: 100%; margin: 1%}	
 
 	.audio-thumb{width: 48%; height: auto; float:left; margin:1%; position: relative;
-		p{text-align: center;}
+		p{ padding: 0 @margen/4;
+			i{ font-size: 20px; float: right; color: darken(@claro,40%);}
+		}
 		&:hover{
 			.delete{visibility: visible;}
 		}
+
+		audio{width: 100%;}
 	}
 
 	.audio-layout{display: inline-block; vertical-align: bottom; width: 40%; height: 150px; margin:@margen/2; position: relative;
@@ -589,7 +596,7 @@ hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highli
 		img{position: absolute; bottom: 20px;}
 	}	
 
-	.foto-thumb, .video-thumb, .audio-thumb, .audio-layout{	
+	.foto-thumb, .audio-thumb, .audio-layout{	
 		.imagen{ width: 100%; height: auto; display: block;}
 		.delete{width:100%; height:100%; background: rgba(0,0,0,.6); position: absolute;top: 0; left: 0; visibility: hidden;
 			p, i{width: 100%; text-align: center; color: @claro; display: block; .center-top;}
