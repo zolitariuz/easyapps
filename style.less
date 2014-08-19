@@ -420,12 +420,15 @@ hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highli
 	.secciones-listas{
 
 		ul{width: 100%; margin:0; float: right; 
-			li{background: @highlight; color: @claro; border: none; text-align: center; padding: @margen/4;
+			li{background: @highlight; color: @claro; border: none; text-align: left; padding: @margen/4;
+				i{color: @claro; margin-right: @margen/4; vertical-align: middle;}	
 				
 			}
 
-			ul{width: 80%; .center;
-				li{ background: none; border: solid 1px @highlight; color: @highlight; }
+			ul{width: 80%; .right;
+				li{ background: none; border: solid 1px @highlight; color: @highlight;
+					i{color: @highlight; margin-right: @margen/4; vertical-align: middle;}
+				}
 			}
 		}
 	}	
@@ -484,7 +487,7 @@ hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highli
 		textarea{min-height: 200px;}
 
 		input[type="radio"],input[type="checkbox"]{
-		    background-color: @claro; border-radius: 10px; cursor: pointer; display: inline-block; height: 20px; width: 20px; .transition;
+		    background-color: @claro; border-radius: 10px; cursor: pointer; display: inline-block; height: 20px; width: 20px; -webkit-font-smoothing:  .transition;
 		&:focus{outline: none; background: @highlight;}
 
 		}
@@ -535,39 +538,68 @@ hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highli
 	&.fotos{min-height: 200px;}	
 }
 
-.uploads{border:solid 1px @highlight;
-	.foto-thumb{width: 10%; height: auto; float:left; margin:@margen/2; position: relative;
+.uploads{
+
+	&.subir{border:solid 1px @highlight;} 
+
+	
+
+	.checkboxgroup{
+	    display:inline-block;
+	    text-align:center;
+	    margin: @margen/2;
+	}
+
+	.checkboxgroup{
+	    display:inline-block;
+	    text-align:center;
+	}
+	.checkboxgroup label {
+	    display:block;
+	}
+	.checkboxgroup img {
+	    display:block;
+	}
+
+	.foto-thumb{width: 8%; height: auto; float:left; margin:1%; position: relative;
 		&:hover{
 			.delete{visibility: visible;}
 		}
 	}
 	
-	.video-thumb{width: 30%; height: auto; float:left; margin:@margen/2; position: relative;
+	.video-thumb{width: 31.33%; height: auto; float:left; margin:1%; position: relative;
 		&:hover{
 			.delete{visibility: visible;}
 		}
 	}	
 
-	.audio-thumb{width: 15%; height: auto; float:left; margin:@margen/2; position: relative;
+	.audio-thumb{width: 48%; height: auto; float:left; margin:1%; position: relative;
+		p{text-align: center;}
 		&:hover{
 			.delete{visibility: visible;}
 		}
+	}
+
+	.audio-layout{display: inline-block; vertical-align: bottom; width: 40%; height: 150px; margin:@margen/2; position: relative;
+		p{text-align: center;}
+		&:hover{
+			.delete{visibility: visible;}
+		}
+		input[type="radio"]{position: absolute; bottom: 0;}
+		img{position: absolute; bottom: 20px;}
 	}	
 
-	.foto-thumb, .video-thumb, .audio-thumb{	
-
+	.foto-thumb, .video-thumb, .audio-thumb, .audio-layout{	
 		.imagen{ width: 100%; height: auto; display: block;}
 		.delete{width:100%; height:100%; background: rgba(0,0,0,.6); position: absolute;top: 0; left: 0; visibility: hidden;
 			p, i{width: 100%; text-align: center; color: @claro; display: block; .center-top;}
 		}
-	
 	}
 }
 
 .revision{ border-bottom: solid 1px @highlight;
 	h4{color: @highlight; .font(1.2em, 1.5em, 800);}
 	em{color: @highlight !important;}
-
 }
 
 /*** FOOTER ***/
