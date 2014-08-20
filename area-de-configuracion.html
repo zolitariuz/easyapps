@@ -11,15 +11,14 @@
 			<input id="titulo-seccion"type="text" class="columna">
 		</fieldset>
 		<fieldset>
-			<label for="url-abrir">URL a abrir<i>*</i></label>
-			<input id="url-abrir"type="url" class="columna">
-		</fieldset>
-		<fieldset>
 			<label for="icono" class="full">Ícono</label>
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
 		</fieldset>
-
+		<fieldset>
+			<label for="url-abrir">URL a abrir<i>*</i></label>
+			<input id="url-abrir"type="url" class="columna">
+		</fieldset>
 		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
 	</form>
 </div><!--WEB-->
@@ -41,7 +40,6 @@
 			<label for="imagen-fondo" class="full">Imagen de fondo <span>mínimo 320px por 500px</span></label>
 			<input id="imagen-fondo" type="image" src="images/config/img-fondo.png" class="img-fondo full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona una imagen</button>
-			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">sube una imagen</button>
 		</fieldset><!--imagen fondo-->
 		<fieldset>
 			<label for="contenido">Contenido<i>*</i></label>
@@ -104,6 +102,12 @@
 			<input id="icono" type="image" src="images/config/icono.png" class="icono-42 full block margin-bottom">
 			<button data-paso-actual="1" data-paso-siguiente="2"  class="alternate big center" type="submit">selecciona un ícono</button>
 		</fieldset><!--icono-->
+
+		<fieldset>
+			<label for="descripcion-galeria-video">Descripción de la galería</label>
+			<textarea id="descripcion-galeria-video" class="columna no-margin">
+			</textarea>
+		</fieldset><!--Título de la sección-->
 
 		<fieldset>
 			<div class="clearfix uploads">
@@ -578,10 +582,6 @@
 			<label for="descripcion-contacto">Descripción</label>
 			<textarea id="descripcion-contacto" class="columna margin-bottom">
 			</textarea>
-			<label for="lista-contactos">Sugerir al usuario agregar el contacto a su lista de contactos</label>
-			<input type="checkbox" value="sí" title="si" class="columna xmall-1"><p>Sí</p>
-			<input type="checkbox" value="sí" title="no" class="columna xmall-1"><p>No</p>
-
 		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
 	</form>
 </div><!--CONTACTO-->
@@ -626,6 +626,7 @@
 		    	<option value="2">noticias</option>
 		    	<option value="3">cena de gala</option>
 		    </select>
+		    <button type="submit" class="alternate right">agregar</button>
 		</fieldset><!--Agregar lista-->
 
 		<fieldset class="bloque-layout">
@@ -641,7 +642,22 @@
 		    	<option value="2">noticias</option>
 		    	<option value="3">cena de gala</option>
 		    </select>
+		    <button type="submit" class="alternate right">agregar</button>
 		</fieldset><!--Agregar lista-->
+		<fieldset>
+			<div class="full clearfix margin-bottom">
+				<legend>Listas agregadas</legend>
+				<div class="clear"></div>
+				<div class="imagenes-listas">Mi primer lista <i class="fa fa-caret-left right"></i></div>
+				<div>
+					<ul>
+						<li><i class="fa fa-camera"></i> Mis fotos <a><i class="fa fa-pencil right"></i></a></li>
+						<li><i class="fa fa-rss"></i> Noticias <a><i class="fa fa-pencil right"></i></a></li>
+						<li><i class="fa fa-map-marker"></i> Mapa <a><i class="fa fa-pencil right"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</fieldset><!--eventos listos-->
 
 		<button data-paso-actual="1" data-paso-siguiente="2"  class="solid big block center" type="submit">guardar sección</button>
 	</form>

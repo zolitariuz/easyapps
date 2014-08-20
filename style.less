@@ -419,15 +419,15 @@ hr{ width: 100%; height: 3px; border: 0; margin: 0; .horizontal-gradient(@highli
 
 	.secciones-listas{
 
-		ul{width: 100%; margin:0; float: right; 
+		ul{width: 100%; margin:0; 
 			li{background: @highlight; color: @claro; border: none; text-align: left; padding: @margen/4;
 				a{width: 20%; display: inline-block;  float: right; cursor: pointer; padding: 0;
 					i{color: @claro; margin-right: @margen/4; vertical-align: middle;}	
 				}
 			}
 
-			ul{width: 80%; .right;
-				li{ background: none; border: solid 1px @highlight; color: @highlight;
+			ul{
+				li{ width: 80%; margin-left: 20%; background: none; border: solid 1px @highlight; color: @highlight;
 					i{color: @highlight; margin-right: @margen/4; vertical-align: middle;}
 				}
 			}
