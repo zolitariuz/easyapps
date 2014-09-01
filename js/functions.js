@@ -90,6 +90,8 @@
 		$('.frame-config').load('area-de-configuracion.html '+seccion);
 	}
 
+	
+
 	function activar(elemento, hermanos){
 		hermanos.removeClass('active');
 		elemento.addClass('active');
