@@ -4,11 +4,13 @@
 
 	$(function(){
 
+		/*** ON LOAD ***/
 		$('#bg-hero').backstretch('images/hero.jpg');
 
 		copyHeight( $('.hero'), $('.bg-hero') );
 		copyHeight( $('.hero'), $('.screen') );
 
+		/*** CLICKS ***/
 		$('body').on('click', '.modal-wrapper .cerrar' ,function(){
 			cerrarModal($(this));
 		});
@@ -31,9 +33,13 @@
 			loadConfiguracion($(this));
 		});
 
+		$('body').on('click', '.tab-header button' ,function(){
+			cambiarTabs($(this));
+		});
+
 		alturaTabla();
 
-		// /*** RESPONSIVE ***/
+		/*** RESPONSIVE ***/
 
 		$(window).resize(function(event) {
 			copyHeight( $('.hero'), $('.bg-hero') );
@@ -43,6 +49,17 @@
 
 
 	});
+
+	function cambiarTabs(elemento){
+		//Boton
+		$('.tab-header button').addClass('disabled');
+		elemento.removeClass('disabled');
+
+		//Tab
+		var tab = elemento.data('tab');
+		$('.tab-content').addClass('hide');
+		$('.tab-content[data-tab="'+tab+'"]').removeClass('hide');
+	}
 
 	function copyHeight(source, destiny){
 		var sourceHeight = source.outerHeight();
@@ -90,7 +107,7 @@
 		$('.frame-config').load('area-de-configuracion.html '+seccion);
 	}
 
-	
+
 
 	function activar(elemento, hermanos){
 		hermanos.removeClass('active');

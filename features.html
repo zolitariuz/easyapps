@@ -44,24 +44,36 @@
 			<div class="main">
 				<div class="width clearfix center subtitulos features">
 					<h3 class="text-center margin-bottom">Nuestras Features</h3>
-					<div class="columna">
-						<div class="columna xmall-12 bloque-features">
-							<h3 class="green">Multimedia</h3>
-							<button class="solid big columna xmall-4">Fotos</button>
-							<button class="solid big columna xmall-4">Video</button>
-							<button class="solid big columna xmall-4">Audio</button>
-						</div>	
-						<div id="features-multimedia" class="columna bloque-features">
-							<img src="images/features/multimedia-foto.png" alt="" class="columna xmall-5">
-							<p class="columna xmall-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
-						</div>
+					<div>
+						<div class="tabs bloque-features">
+							<div class="tab-header columna xmall-12 bloque-features">
+								<h3 class="green">Multimedia</h3>
+								<button data-tab="fotos" class="solid big columna xmall-4">Fotos</button>
+								<button data-tab="videos" class="solid big columna xmall-4 disabled">Videos</button>
+								<button data-tab="audios" class="solid big columna xmall-4 disabled">Audios</button>
+							</div>
+							<div class="tab-container bloque-feature">
+								<div class="tab-content clearfix multimedia-foto" data-tab="fotos">
+									<img src="images/features/multimedia-foto.png" alt="" class="columna xmall-5">
+									<p class="columna xmall-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
+								</div>
+								<div class="tab-content clearfix multimedia-video hide" data-tab="videos">
+									<img src="images/features/multimedia-video.png" alt="" class="columna xmall-3">
+									<p class="columna xmall-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
+								</div>
+								<div class="tab-content clearfix multimedia-audio hide" data-tab="audios">
+									<p class="columna xmall-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
+									<img src="images/features/multimedia-audio.png" alt="" class="columna xmall-3">
+								</div>
+							</div><!-- tab-container -->
+						</div><!-- tabs -->
+						<div class="clear"></div>
 						<div class="columna bloque-features">
 							<div class="columna xmall-6">
 								<h3>Noticias (RSS feed)</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
 							</div>
-							
-							<img src="images/features/noticias-features.png" alt="" class="columna xmall-6">	
+							<img src="images/features/noticias-features.png" alt="" class="columna xmall-6">
 						</div>
 						<div class="columna bloque-features">
 							<img src="images/features/mapas-features.png" alt="" class="columna xmall-6">
@@ -69,28 +81,27 @@
 								<h3>Mapas</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
 							</div>
-								
 						</div>
 						<div class="columna xmall-6 bloque-features">
 							<div class="columna xmall-6">
 								<h3>Evento</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
 							</div>
-							<img src="images/features/eventos-features.png" alt="" class="columna xmall-6 center block">	
+							<img src="images/features/eventos-features.png" alt="" class="columna xmall-6 center block">
 						</div>
 						<div class="columna xmall-6 bloque-features">
 							<div class="columna xmall-6">
 								<h3>Menu</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
 							</div>
-							<img src="images/features/menu-features.png" alt="" class="columna xmall-6 center block">	
+							<img src="images/features/menu-features.png" alt="" class="columna xmall-6 center block">
 						</div>
 						<div class="columna xmall-6 bloque-features">
 							<div class="columna xmall-12">
 								<h3>Contacto</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. At enim sequor utilitatem. Aliter enim nosmet ipsos nosse non possumus. Portenta haec esse dicit, neque ea ratione ullo modo posse vivi;i</p>
 							</div>
-							<img src="images/features/contacto-features.png" alt="" class="columna xmall-6 center block">	
+							<img src="images/features/contacto-features.png" alt="" class="columna xmall-6 center block">
 						</div>
 						<div class="columna xmall-6 bloque-features">
 							<div class="columna xmall-12">
@@ -99,6 +110,7 @@
 							</div>
 							<img src="images/features/web-features.png" alt="" class="columna xmall-6 center block">
 						</div>
+						<div class="clear"></div>
 						<div class="full clearfix bloque-features">
 							<h3 class="text-center">Distintos tipos de navegación</h3>
 							<div class="columna xmall-4">
@@ -178,4 +190,3 @@
 	<script src="js/functions.js"></script>
 
 </html>
-
