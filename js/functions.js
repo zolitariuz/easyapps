@@ -5,10 +5,9 @@
 	$(function(){
 
 		/*** ON LOAD ***/
-		$('#bg-hero').backstretch('images/hero.jpg');
+		$('.hero').backstretch('images/hero.jpg');
 
-		copyHeight( $('.hero'), $('.bg-hero') );
-		copyHeight( $('.hero'), $('.screen') );
+		//copyHeight( $('.hero'), $('.bg-hero') );
 
 		/*** CLICKS ***/
 		$('body').on('click', '.modal-wrapper .cerrar' ,function(){
@@ -106,8 +105,6 @@
 		$('.frame-config').empty();
 		$('.frame-config').load('area-de-configuracion.html '+seccion);
 	}
-
-
 
 	function activar(elemento, hermanos){
 		hermanos.removeClass('active');
